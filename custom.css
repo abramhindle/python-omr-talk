@@ -1,0 +1,29 @@
+/* Change output font size*/
+.text_cell_render .rendered_html table{
+font-size: 20pt !important;
+}
+
+A few other formatting tweaks, in case you’re interested:
+/* Change inner background (for code) */
+div.input_area {
+background: white !important;
+font-size: 16pt !important;
+}
+
+/* Change global font size (for code) */
+.CodeMirror {
+font-size: 16pt !important;
+font-family: monospace;
+}
+/* make the thing wide */
+.container { width:99% !important; }
+/* https://stackoverflow.com/questions/21971449/how-do-i-increase-the-cell-width-of-the-jupyter-ipython-notebook-in-my-browser */
+/* Prevent the edit cell highlight box from getting clipped;
+ * important so that it also works when cell is in edit mode*/
+div.cell.selected {
+    border-left-width: 1px !important;
+}
+div#notebook {
+    font-size: 20pt !important;
+    line-height: 22pt;
+}
